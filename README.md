@@ -1,8 +1,8 @@
 # qa_326
 <h3>Полезные материалы</h3>
 <ul>
-<li><a href="https://docs.python.org/3/" target="_blank">документация по пайтону</a> <br></li>
-<li><a href="https://thonny.org/" target="_blank">еще одна среда разботки для пайтона (хорошо при обучении)</a> <br></li>
+<li><a href="https://docs.google.com/presentation/d/1bef5iEjtvom-LCLCmMW59-oNAbgtjoC4/edit?usp=sharing&ouid=110210230185254273727&rtpof=true&sd=true">презентация основы теории БД</a> <br></li>
+<li><a href="https://docs.google.com/presentation/d/1BOpxVDGaiH63jyGNWqQ6HyZ2OSBL689S/edit?usp=sharing&ouid=110210230185254273727&rtpof=true&sd=true" target="_blank">sql основы</a> <br></li>
 
-<li><a href="http://www.itmathrepetitor.ru/prog/zadachi-na-vychisleniya" target="_blank">а вот тут можно практику набивать по пайтону</a> </li>
+<li><a href="#" target="_blank">а вот тут можно практику набивать по пайтону</a> </li>
 </ul>
