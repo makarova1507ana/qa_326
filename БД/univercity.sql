@@ -1,4 +1,6 @@
 
+
+
 Create database if not exists university;
 
 use university;/*
@@ -129,7 +131,17 @@ INSERT INTO Schedule (day_of_week, time, course, group_id) VALUES
 -- Получить все уникальные курсы, в которых зарегистрированы студенты:
 -- Получить список всех курсов и соответствующих преподавателей, включая информацию о студентах, изучающих эти курсы:
 
+select * from schedule ;
 
+select * from schedule 
+join courses 
+on courses.course_id = schedule.course;
+
+select * from schedule 
+join courses 
+on courses.course_id = schedule.course
+join groups_students 
+on groups_students.group_id = schedule.group_id;
 
 --  примеры с UNION 
 
