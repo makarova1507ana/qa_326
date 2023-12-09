@@ -1,8 +1,7 @@
 
-
 Create database if not exists university;
 
-use university;
+use university;/*
 -- Создание таблицы "Professors"
 CREATE TABLE Professors (
     professor_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -48,6 +47,7 @@ INSERT INTO groups_students (group_name, professor_id) VALUES
 CREATE TABLE Courses (
     course_id INT PRIMARY KEY AUTO_INCREMENT,
     course_name VARCHAR(100),
+    professor_id INT,
 	FOREIGN KEY(professor_id) REFERENCES Professors(professor_id)
 
 );
@@ -74,8 +74,7 @@ CREATE TABLE if not exists Students (
     course INT,
     group_id INT,
 	FOREIGN KEY(course) REFERENCES courses(course_id),
-
-    FOREIGN KEY(group_id) REFERENCES groups_students(groups_id)
+    FOREIGN KEY(group_id) REFERENCES groups_students(group_id)
 );
 
 -- Добавление записей в таблицу "Students"
@@ -102,12 +101,14 @@ CREATE TABLE Schedule (
     schedule_id INT PRIMARY KEY AUTO_INCREMENT,
     day_of_week VARCHAR(20),
     time TIME,
+    course INT,
+    group_id INT,
 	FOREIGN KEY(course) REFERENCES courses(course_id),
-    FOREIGN KEY(group_id) REFERENCES groups_students(groups_id)
+    FOREIGN KEY(group_id) REFERENCES groups_students(group_id)
 );
 
 -- Добавление записей в таблицу "Schedule"
-INSERT INTO Schedule (day_of_week, time, course_id, group_id) VALUES
+INSERT INTO Schedule (day_of_week, time, course, group_id) VALUES
     ('Понедельник', '09:00:00', 1, 1),
     ('Вторник', '10:30:00', 2, 2),
     ('Среда', '11:45:00', 3, 1),
@@ -118,7 +119,7 @@ INSERT INTO Schedule (day_of_week, time, course_id, group_id) VALUES
     ('Понедельник', '14:15:00', 8, 2),
     ('Вторник', '15:45:00', 9, 1),
     ('Среда', '16:30:00', 10, 2);
-
+*/
 
 -- Выбрать студентов и их курсы:
 -- Получить информацию о преподавателях и курсах, веденных ими:
