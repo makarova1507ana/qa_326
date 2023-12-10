@@ -1,6 +1,6 @@
 create database if not exists hospital;
 use hospital;
-
+/*
 -- Создание таблицы пациентов
 CREATE TABLE if not exists  Patients (
     PatientID INT AUTO_INCREMENT PRIMARY KEY,
@@ -93,13 +93,32 @@ INSERT INTO MedicalRecords (PatientID, DoctorID, Diagnosis, Prescription, Date) 
 (2, 1, 'Migraine', 'Prescribed medication B', '2023-03-30'),
 (1, 2, 'Anxiety disorder', 'Counseling sessions', '2023-07-15');
 
+-- Добавление дополнительных данных в таблицу пациентов
+INSERT INTO Patients (FullName, Age, Gender, Phone, Email, Address) VALUES
+('Olivia Ivanova', 33, 'Female', '+777777777', 'olivia@example.com', '321 Oak St'),
+('Olga Onapova', 44, 'Male', '+888888888', 'daniel@example.com', '456 Maple St');
 
--- показать все записи
+-- Добавление дополнительных данных в таблицу врачей
+INSERT INTO Doctors (FullName, Specialization, Phone, Email, Address) VALUES
+('Dr. Jessica Loo', 'Neurologist', '+999999999', 'Jessica@example.com', '888 Elm St'),
+('Dr. Monko Roo', 'Psychiatrist', '+1010101010', 'Monko@example.com', '999 Pine St');
+
+*/
+
+-- показать все записи приемов
 -- показать все записи данного доктора
 -- показать все записи данного клиента
---  показать даты ближайшего приема прием
+
+
+
+--  показать даты ближайшего приема 
 --  показать кол-во записией у данного врача
--- показать кол-во посещений у данного врача
+-- показать кол-во посещений у данного клиента
+-- показать самого популярного врача (у него больше всего записей)
+-- показать самого непопулярного врача (у него меньше всего записей)
+-- показать клиента, который не посещал ни разу врачей (в данной бд)
+-- показать клиента, который не посещал врачей за последний полгода
+
 --  показать самый давний прием данного пациента
 
 
