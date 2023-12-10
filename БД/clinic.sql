@@ -1,5 +1,8 @@
+create database if not exists hospital;
+use hospital;
+
 -- Создание таблицы пациентов
-CREATE TABLE Patients (
+CREATE TABLE if not exists  Patients (
     PatientID INT AUTO_INCREMENT PRIMARY KEY,
     FullName VARCHAR(100),
     Age INT,
@@ -15,7 +18,7 @@ INSERT INTO Patients (FullName, Age, Gender, Phone, Email, Address) VALUES
 ('Anna Johnson', 28, 'Female', '+987654321', 'anna@example.com', '456 Oak St');
 
 -- Создание таблицы врачей
-CREATE TABLE Doctors (
+CREATE TABLE if not exists Doctors (
     DoctorID INT AUTO_INCREMENT PRIMARY KEY,
     FullName VARCHAR(100),
     Specialization VARCHAR(100),
@@ -30,7 +33,7 @@ INSERT INTO Doctors (FullName, Specialization, Phone, Email, Address) VALUES
 ('Dr. Elena Petrova', 'Dermatologist', '+222222222', 'elena@example.com', '567 Pine St');
 
 -- Создание таблицы медицинских записей
-CREATE TABLE MedicalRecords (
+CREATE TABLE if not exists MedicalRecords (
     RecordID INT AUTO_INCREMENT PRIMARY KEY,
     PatientID INT,
     DoctorID INT,
@@ -75,4 +78,3 @@ INSERT INTO Doctors (FullName, Specialization, Phone, Email, Address) VALUES
 INSERT INTO MedicalRecords (PatientID, DoctorID, Diagnosis, Prescription, Date) VALUES
 (3, 5, 'Migraine', 'Prescribed medication A', '2023-05-20'),
 (4, 6, 'Anxiety disorder', 'Counseling sessions', '2023-06-15');
-
