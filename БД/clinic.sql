@@ -78,3 +78,41 @@ INSERT INTO Doctors (FullName, Specialization, Phone, Email, Address) VALUES
 INSERT INTO MedicalRecords (PatientID, DoctorID, Diagnosis, Prescription, Date) VALUES
 (3, 5, 'Migraine', 'Prescribed medication A', '2023-05-20'),
 (4, 6, 'Anxiety disorder', 'Counseling sessions', '2023-06-15');
+
+
+
+
+
+-- Добавление дополнительных данных в таблицу медицинских записей
+INSERT INTO MedicalRecords (PatientID, DoctorID, Diagnosis, Prescription, Date) VALUES
+(4, 1, 'Migraine', 'Prescribed medication A', '2023-12-01'),
+(3, 2, 'Anxiety disorder', 'Counseling sessions', '2023-12-03');
+
+-- Добавление дополнительных данных в таблицу медицинских записей
+INSERT INTO MedicalRecords (PatientID, DoctorID, Diagnosis, Prescription, Date) VALUES
+(2, 1, 'Migraine', 'Prescribed medication B', '2023-03-30'),
+(1, 2, 'Anxiety disorder', 'Counseling sessions', '2023-07-15');
+
+
+-- показать все записи
+-- показать все записи данного доктора
+-- показать все записи данного клиента
+--  показать даты ближайшего приема прием
+--  показать кол-во записией у данного врача
+-- показать кол-во посещений у данного врача
+--  показать самый давний прием данного пациента
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
