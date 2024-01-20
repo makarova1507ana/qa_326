@@ -1,0 +1,68 @@
+body {
+    background-color: #d6bcf4;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    /*margin: 0;*/
+    /*примениться ко всем 4 сторонам*/
+}
+
+h1 {
+    background-color: #C2D64F;
+}
+
+.text_cat {
+    color: #000;
+}
+
+#text1234 {
+    background-color: #fff;
+}
+
+.marklist {
+    background-color: aquamarine;
+}
+
+.marklist li {
+    color: black;
+}
+
+div {
+    border: solid 3px #000;
+    background-color: rgb(220, 122, 170);
+    margin-bottom: 5px;
+}
+
+span {
+    border: solid 3px #000;
+    color: black;
+    background-color: rgb(164, 232, 179);
+}
+
+div::first-letter {
+    font-size: 500%;
+}
+
+.red,
+.orange,
+.yellow {
+    border: solid 0px #000;
+    font-size: 3em;
+    padding-right: 50px;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+span:hover {
+    background-color: #fff;
+}
