@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.5 on win32)" generated="2024-03-03T14:20:45.670401" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Example" source="C:\Users\Anastasia\Desktop\Groups\QA_326\OAT\selenium\lesson11\test_example.robot">
+<test id="s1-t1" name="Тест на сайте Яндекс" line="4">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-03-03T14:20:45.885057" level="INFO">Opening browser 'googlechrome' to base url 'https://www.ya.ru'.</msg>
+<arg>https://www.ya.ru</arg>
+<arg>googlechrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-03T14:20:45.884060" elapsed="3.821446"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-03T14:20:49.706518" elapsed="0.120962"/>
+</kw>
+<kw name="Close Browser" owner="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-03T14:20:49.828005" elapsed="2.172915"/>
+</kw>
+<status status="PASS" start="2024-03-03T14:20:45.883058" elapsed="6.117862"/>
+</test>
+<status status="PASS" start="2024-03-03T14:20:45.672404" elapsed="6.330517"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Example">Test Example</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
